@@ -4,7 +4,10 @@ import models.Produto;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProdutoDAO {
     private Conexao conexao;
@@ -27,6 +30,8 @@ public class ProdutoDAO {
             ps.setInt(5, produto.getQuantidadeMinimaEstoque());
 
             ps.executeUpdate();
+
+            ps.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -36,6 +41,37 @@ public class ProdutoDAO {
                 e.printStackTrace();
             }
         }
+    }
 
+    public List<Produto> listar() {
+        String query = "SELECT * FROM produto";
+        Connection conn = conexao.getConexao();
+        List<Produto> produtos = new ArrayList<>();
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt(1);
+                String nome = rs.getString(2);
+                double valorVenda = rs.getDouble(3);
+                double custoUnitario = rs.getDouble(4);
+                int qtdEstoque = rs.getInt(5);
+                int qtdMinEstoque = rs.getInt(6);
+
+                produtos.add(new Produto(id, nome, valorVenda, custoUnitario, qtdEstoque, qtdMinEstoque));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            return produtos;
+        }
     }
 }

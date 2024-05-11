@@ -1,11 +1,21 @@
 package models;
 
 public class Produto {
+    private int produtoId;
     private String nomeProduto;
     private double valorVenda;
     private double custoUnitario;
     private int quantidadeEstoque;
     private int quantidadeMinimaEstoque;
+
+    public Produto(int produtoId, String nomeProduto, double valorVenda, double custoUnitario, int quantidadeEstoque, int quantidadeMinimaEstoque) {
+        this.produtoId = produtoId;
+        this.nomeProduto = nomeProduto;
+        this.valorVenda = valorVenda;
+        this.custoUnitario = custoUnitario;
+        this.quantidadeEstoque = quantidadeEstoque;
+        this.quantidadeMinimaEstoque = quantidadeMinimaEstoque;
+    }
 
     public Produto(String nomeProduto, double valorVenda, double custoUnitario, int quantidadeEstoque, int quantidadeMinimaEstoque) {
         this.nomeProduto = nomeProduto;
@@ -53,5 +63,9 @@ public class Produto {
 
     public void setQuantidadeMinimaEstoque(int quantidadeMinimaEstoque) {
         this.quantidadeMinimaEstoque = quantidadeMinimaEstoque;
+    }
+
+    public int getProdutoId() {
+        return produtoId;
     }
 }

@@ -3,6 +3,7 @@ package views;
 import models.Produto;
 import utils.TextEntryValidator;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class ProdutoView {
@@ -30,5 +31,24 @@ public class ProdutoView {
         int qtdMinimaEstoque = sc.nextInt();
 
         return new Produto(nome, valorVenda, custoUnitario, qtdEstoque, qtdMinimaEstoque);
+    }
+
+    public void listar(List<Produto> produtos) {
+        if (produtos.size() == 0) {
+            System.out.println("Sem produtos cadastrados");
+            return;
+        }
+
+        for (Produto prod:produtos) {
+            System.out.println(
+                    "ID do produto: " + prod.getProdutoId() + "\n" +
+                    "Produto: " + prod.getNomeProduto() + "\n" +
+                    "Valor: " + prod.getValorVenda() + "\n" +
+                    "Custo Unitário: " + prod.getCustoUnitario() + "\n" +
+                    "Qtd. em estoque: " + prod.getQuantidadeEstoque() + "\n" +
+                    "Qtd. mínima de estoque" + prod.getQuantidadeMinimaEstoque() +
+                    "\n==============================================================="
+            );
+        }
     }
 }

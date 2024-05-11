@@ -11,7 +11,8 @@ public class MenuView {
     }
 
     public int mostrarMenu() {
-        System.out.println("Selecione uma opção: \n(0) Sair  | (1) Cadastrar produto");
+        System.out.println("Selecione uma opção: " +
+                "\n(0) Sair  | (1) Cadastrar produto | (2) Listar Produtos");
 
         return sc.nextInt();
 

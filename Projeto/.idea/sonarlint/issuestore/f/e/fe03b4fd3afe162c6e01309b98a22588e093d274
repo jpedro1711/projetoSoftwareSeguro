@@ -1,6 +1,5 @@
 
 €
-java:S1854"8Remove this useless assignment to local variable "menu".(ÍüŒ™şÿÿÿÿ8ÿªœ¿ö1J$ea65aa95-5f57-4bca-abda-c4ddf3e645ea
-L	java:S106"+Replace this use of System.out by a logger.(¬Ûúÿÿÿÿ8ÑÌ¿ö1
+java:S1854"8Remove this useless assignment to local variable "menu".(ÍüŒ™şÿÿÿÿ8ÿªœ¿ö1J$0d716f16-a247-43c9-89bb-32fadd609bbd
 q
-java:S1481")Remove this unused "menu" local variable.(ÍüŒ™şÿÿÿÿ8‚«œ¿ö1J$3ffcd0ae-e022-47c5-bfe3-37a5346ddf14
+java:S1481")Remove this unused "menu" local variable.(ÍüŒ™şÿÿÿÿ8‚«œ¿ö1J$6e445274-4217-4f19-b51b-ba78071d2a9f

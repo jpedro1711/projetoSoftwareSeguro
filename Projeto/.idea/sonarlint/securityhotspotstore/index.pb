@@ -25,3 +25,17 @@ _
 src/.env,f\8\f8550963f8b93cc32435b4600b84f3d3def8daa7
 ]
 -src/controllers/ListarProdutosController.java,c\0\c0b8a241aab9505abd8ed35c7335ff3c74354fe4
+K
+src/logs/ExceptionsLogs.txt,7\b\7b3489cb38172be5752f57b9438b89e8921eb0c9
+O
+src/utils/ExceptionsLogger.java,2\9\2966cbffdc1705458dfde3481b511c0f924dbcba
+B
+ExceptionsLogs.txt,2\7\270880671fe40a88a8ef338edfd7d78a94d1c54c
+B
+src/utils/logs.txt,3\2\329d0f5baee39b83ae0b31eee51c1278e85e8463
+C
+src/publicacoes.txt,4\7\47a692aa8237d6a20d4af6bc8b41ebd1d1aea74b
+8
+logs.txt,1\d\1dd35c026cb6ba796cb4cee814165d6493551a7f
+<
+src/logs.txt,6\f\6f085280cedb9614f7ea2076c59107c73c89fd76

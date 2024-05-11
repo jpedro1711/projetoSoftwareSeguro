@@ -1,7 +1,13 @@
 
 w
-java:S1143J"5Remove this return statement from this finally block.(…œı8ç¡´Åö1J$83e67fc8-8f83-4dfb-adec-84672c5ca57a
+java:S1143W"5Remove this return statement from this finally block.(…œı8š¥–Æö1J$3601b68e-ebb3-4665-9138-33a6de99aa0b
 —
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öÚ¥ùÿÿÿÿ8¢´Åö1J$01d46d02-8bba-40f0-82b2-e87260181414
-q
-java:S20954"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öÚ¥ùÿÿÿÿ8ğùÈÅö1
+java:S2095;"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öÚ¥ùÿÿÿÿ8À÷—Æö1J$e912c36a-a99e-46af-a7f3-4922caa40c1b
+—
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öÚ¥ùÿÿÿÿ8€¦–Æö1J$b656802b-bc8b-47db-ab35-b48f56e256ec
+z
+java:S2589P"7Remove this expression which always evaluates to "true"(¡ææú8¦–Æö1J$c429bd19-83ca-4db4-8a7c-91f4ad786298
+Œ
+java:S2147("DCombine this catch with the one at line 37, which has the same body.(ñ“Š±üÿÿÿÿ8Å¦äÆö1J$6f2f4d5a-b826-41d9-a9e2-51e5d449ab78
+Œ
+java:S2147L"DCombine this catch with the one at line 73, which has the same body.(ñ“Š±üÿÿÿÿ8ÏåÆö1J$16b18375-11c7-4661-8036-d24d30d1f614

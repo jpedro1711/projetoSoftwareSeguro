@@ -1,5 +1,7 @@
 package dao;
 
+import utils.ExceptionsLogger;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -21,9 +23,9 @@ public class Conexao {
 
             conexao = DriverManager.getConnection(dbHost, dbUser, dbPassword);
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            ExceptionsLogger.log(e);
         } catch (Exception e) {
-            e.printStackTrace();
+            ExceptionsLogger.log(e);
         }
     }
 
@@ -38,7 +40,7 @@ public class Conexao {
         try {
             return DriverManager.getConnection(dbHost, dbUser, dbPassword);
         } catch (SQLException e) {
-            e.printStackTrace();
+            ExceptionsLogger.log(e);
         }
         return null;
     }

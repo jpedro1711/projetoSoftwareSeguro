@@ -1,10 +1,10 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(ÕÓå§ÿÿÿÿÿ8‹¯Åö1J$a6c51b2d-30a6-4b64-bf9e-dbb002cb2b13
-r	java:S106"+Replace this use of System.out by a logger.(Ä¨ˆŠÿÿÿÿÿ8Œ¯Åö1J$e972320b-2967-48cc-8e39-9fa5f1f4203d
-m	java:S106"+Replace this use of System.out by a logger.(Ÿ‡Æ®8¯Åö1J$cd9db59c-5170-4c42-be4f-520b6f4df17c
-m	java:S106"+Replace this use of System.out by a logger.(‰ÜÊ„8¯Åö1J$da1a55dc-574f-4612-a78a-823f3c72908a
-l	java:S106"+Replace this use of System.out by a logger.(éÈ8¯Åö1J$f98ca9ed-beff-4d2a-ae8e-b7a7013fb679
+r	java:S106"+Replace this use of System.out by a logger.(ÕÓå§ÿÿÿÿÿ8‹¯Åö1J$5e6c9eec-5242-4063-8e9b-ea6e5200424e
+r	java:S106"+Replace this use of System.out by a logger.(Ä¨ˆŠÿÿÿÿÿ8Œ¯Åö1J$b61ce6ca-3e14-49fe-b5a3-5cc0d7148c2a
+m	java:S106"+Replace this use of System.out by a logger.(Ÿ‡Æ®8¯Åö1J$4f17c3c9-8834-42ae-8f95-33d4182e6847
+m	java:S106"+Replace this use of System.out by a logger.(‰ÜÊ„8¯Åö1J$874ea233-a0d6-49e7-a6fa-1b96fdad4811
+l	java:S106"+Replace this use of System.out by a logger.(éÈ8¯Åö1J$8e146361-c336-4254-9bac-e35e0cb589f4
 
-java:S1155%">Use isEmpty() to check whether the collection is empty or not.(ÁÃóç8‘¯Åö1J$dff6c38f-bfd6-43a9-b098-ee2f6cdc639e
-m	java:S106&"+Replace this use of System.out by a logger.(€°„¹8’¯Åö1J$171f14be-9172-4ad0-93a7-43c170b6a1c6
-m	java:S106+"+Replace this use of System.out by a logger.(ÆÀûı8’¯Åö1J$ecfb82d1-c685-42ef-b3b8-e3486a8397cc
+java:S1155%">Use isEmpty() to check whether the collection is empty or not.(ÁÃóç8‘¯Åö1J$cc3fef4c-e2e2-47ad-a80c-e4bbd9fb42a9
+m	java:S106&"+Replace this use of System.out by a logger.(€°„¹8’¯Åö1J$f53f3f68-5ec1-4439-8643-fe72a4952ede
+m	java:S106+"+Replace this use of System.out by a logger.(ÆÀûı8’¯Åö1J$28d57203-73e0-4e95-9e63-fef25b66aff3

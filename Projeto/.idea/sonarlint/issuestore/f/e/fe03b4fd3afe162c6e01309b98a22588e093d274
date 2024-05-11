@@ -1,3 +1,6 @@
 
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8‡£Âªõ1J$014054ba-2afa-4d62-8c29-010dd43d2eaf
+€
+java:S1854"8Remove this useless assignment to local variable "menu".(ÍüŒ™şÿÿÿÿ8ÿªœ¿ö1J$ea65aa95-5f57-4bca-abda-c4ddf3e645ea
+L	java:S106"+Replace this use of System.out by a logger.(¬Ûúÿÿÿÿ8ÑÌ¿ö1
+q
+java:S1481")Remove this unused "menu" local variable.(ÍüŒ™şÿÿÿÿ8‚«œ¿ö1J$3ffcd0ae-e022-47c5-bfe3-37a5346ddf14

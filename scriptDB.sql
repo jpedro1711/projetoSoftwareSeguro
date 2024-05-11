@@ -1,15 +1,16 @@
+drop database projeto_softwareseguro;
 create database projeto_softwareseguro;
 use projeto_softwareseguro;
 
 create table produto (
 	id int primary key auto_increment,
+    nomeProduto varchar(150),
     valorVenda decimal not null,
     custoUnitario decimal not null,
     quantidadeEstoque int,
-    quantidadeMinimaEstoque int,
-    categoriaId int
+    quantidadeMinimaEstoque int
 );
-
+select * from produto;
 # exemplo de date: '2024-05-07'
 create table venda (
 	id int primary key auto_increment,

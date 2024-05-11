@@ -1,0 +1,9 @@
+
+8
+java:S1700"Rename field "conexao"(–±µ·ÿÿÿÿÿ8ò¬Œ¿ö1
+¶
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.( ªƒ®8’­Œ¿ö1
+a
+java:S2147"DCombine this catch with the one at line 23, which has the same body.(”ı¾8–­Œ¿ö1
+M
+java:S1068"+Remove this unused "conexao" private field.(–±µ·ÿÿÿÿÿ8œ­Œ¿ö1

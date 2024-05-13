@@ -1,11 +1,14 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(ÕÓå§ÿÿÿÿÿ8îÆö1J$af057e1b-1c57-4386-885e-038567f8b575
-r	java:S106"+Replace this use of System.out by a logger.(Ä¨ˆŠÿÿÿÿÿ8ïÆö1J$c79126b3-87a3-4bd2-bf90-5b7b15b83689
-m	java:S106"+Replace this use of System.out by a logger.(Ÿ‡Æ®8ðÆö1J$c5b9d8a4-531e-4bce-a99c-5c2bba529ed0
-m	java:S106"+Replace this use of System.out by a logger.(‰ÜÊ„8ðÆö1J$17563039-2ad1-4858-8149-bb188199cfc9
-l	java:S106 "+Replace this use of System.out by a logger.(éÈ8ñÆö1J$4f067028-d20f-46d0-a37c-34c640935a6f
-m	java:S106$"+Replace this use of System.out by a logger.(™ùÄâ8òÆö1J$a768b00f-1721-49a8-b6fa-4b7fefecc8d6
-[
-java:S1155*">Use isEmpty() to check whether the collection is empty or not.(ÁÃóç8úŒ‘Æö1
-G	java:S106+"+Replace this use of System.out by a logger.(€°„¹8úŒ‘Æö1
-G	java:S1060"+Replace this use of System.out by a logger.(ÆÀûý8ûŒ‘Æö1
+r	java:S106"+Replace this use of System.out by a logger.(ÕÓå§ÿÿÿÿÿ8ÿ¥™Ÿ÷1J$c5b74ea5-77a7-4439-be38-a4125c6ba740
+r	java:S106"+Replace this use of System.out by a logger.(Ä¨ˆŠÿÿÿÿÿ8Ž¦™Ÿ÷1J$96fd6771-bb11-447a-9cda-affb4131fa2f
+m	java:S106"+Replace this use of System.out by a logger.(Ÿ‡Æ®8ž¦™Ÿ÷1J$bf0a879a-7283-4d75-a913-1f95fc6c19de
+m	java:S106"+Replace this use of System.out by a logger.(‰ÜÊ„8Ÿ¦™Ÿ÷1J$3be04c91-912a-44e5-b5c8-f16617e4d072
+l	java:S106!"+Replace this use of System.out by a logger.(éÈ8 ¦™Ÿ÷1J$599cc2e6-1a51-4940-928c-247c46be393c
+m	java:S106%"+Replace this use of System.out by a logger.(™ùÄâ8¢¦™Ÿ÷1J$f9a25e2d-23e0-43d3-9876-88da4c837b72
+
+java:S1155+">Use isEmpty() to check whether the collection is empty or not.(ÁÃóç8£¦™Ÿ÷1J$85605d20-b778-4a77-97c1-5424c2c06bfa
+m	java:S106,"+Replace this use of System.out by a logger.(€°„¹8¤¦™Ÿ÷1J$53c711ae-fdb6-4ceb-a5a7-5e6a08705b6e
+m	java:S1061"+Replace this use of System.out by a logger.(ÆÀûý8¤¦™Ÿ÷1J$72c1b1ea-9c96-437c-88e0-35e462ac24ba
+m	java:S106?"+Replace this use of System.out by a logger.(Ø‹³½8¦¦™Ÿ÷1J$d9232e9f-a12d-4968-9776-730ee3751096
+r	java:S106B"+Replace this use of System.out by a logger.(­·°ôûÿÿÿÿ8¦¦™Ÿ÷1J$0a4f498c-fbc0-4a34-b82e-5d95e1b9a4c6
+m	java:S106I"+Replace this use of System.out by a logger.(Ô£À€8ÉŽ¦Ÿ÷1J$d0a54606-84d6-4973-8e5f-2af667a2ebd6

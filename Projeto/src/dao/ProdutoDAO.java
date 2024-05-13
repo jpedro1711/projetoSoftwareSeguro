@@ -1,5 +1,6 @@
 package dao;
 
+import exceptions.ProdutoException;
 import models.Produto;
 import utils.ExceptionsLogger;
 
@@ -87,4 +88,70 @@ public class ProdutoDAO {
             return produtos;
         }
     }
+
+    public Produto buscarProdutoPorId(int id) {
+        String query = "SELECT * FROM produto WHERE id = ?";
+        Connection conn = conexao.getConexao();
+        Produto produto = null;
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, id);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                String nome = rs.getString("nomeProduto");
+                double valorVenda = rs.getDouble("valorVenda");
+                double custoUnitario = rs.getDouble("custoUnitario");
+                int qtdEstoque = rs.getInt("quantidadeEstoque");
+                int qtdMinEstoque = rs.getInt("quantidadeMinimaEstoque");
+
+                produto = new Produto(id, nome, valorVenda, custoUnitario, qtdEstoque, qtdMinEstoque);
+            }
+        } catch (SQLException e) {
+            ExceptionsLogger.log(e);
+        } finally {
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    ExceptionsLogger.log(e);
+                }
+            }
+        }
+
+        return produto;
+    }
+
+
+    public void atualizarQuantidadeEstoque(int id, int novaQuantidade) throws ProdutoException {
+        if (buscarProdutoPorId(id) == null) {
+            throw new ProdutoException("Produto não encontrado");
+        }
+
+        String query = "UPDATE produto SET quantidadeEstoque = ? WHERE id = ?";
+        Connection conn = conexao.getConexao();
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, novaQuantidade);
+            ps.setInt(2, id);
+
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            ExceptionsLogger.log(e);
+        }
+        finally {
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    ExceptionsLogger.log(e);
+                }
+            }
+        }
+    }
+
+
 }

@@ -12,7 +12,9 @@ public class MenuView {
 
     public int mostrarMenu() {
         System.out.println("Selecione uma opção: " +
-                "\n(0) Sair  | (1) Cadastrar produto | (2) Listar Produtos");
+                "\n(0) Sair  | (1) Cadastrar produto | (2) Listar Produtos" +
+                "\n(3) Atualizar quantidade em estoque"
+                );
 
         return sc.nextInt();
 

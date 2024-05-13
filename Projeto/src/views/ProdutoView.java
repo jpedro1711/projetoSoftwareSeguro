@@ -1,6 +1,7 @@
 package views;
 
 import models.Produto;
+import models.viewModels.AtualizarQtdViewModel;
 import utils.TextEntryValidator;
 
 import java.util.InputMismatchException;
@@ -51,9 +52,24 @@ public class ProdutoView {
                     "Valor: " + prod.getValorVenda() + "\n" +
                     "Custo Unitário: " + prod.getCustoUnitario() + "\n" +
                     "Qtd. em estoque: " + prod.getQuantidadeEstoque() + "\n" +
-                    "Qtd. mínima de estoque" + prod.getQuantidadeMinimaEstoque() +
+                    "Qtd. mínima de estoque: " + prod.getQuantidadeMinimaEstoque() +
                     "\n==============================================================="
             );
         }
+    }
+
+    public AtualizarQtdViewModel atualizarQtdEmEstoque(List<Produto> produtos) {
+        listar(produtos);
+        System.out.print("Digite o id do produto: ");
+        int produtoId = sc.nextInt();
+
+        System.out.print("\nDigite a nova quantidade em estoque: ");
+        int novaQtd = sc.nextInt();
+
+        return new AtualizarQtdViewModel(produtoId, novaQtd);
+    }
+
+    public void showError(String msg) {
+        System.out.println("Error: " + msg);
     }
 }

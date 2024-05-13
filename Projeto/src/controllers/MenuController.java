@@ -6,6 +6,7 @@ public class MenuController {
     private MenuView menuView;
     private CadastrarProdutoController cadastrarProdutoController;
     private ListarProdutosController listarProdutosController;
+    private AtualizarQtdEmEstoqueController atualizarQtdEmEstoqueControler;
 
 
     public MenuController() {
@@ -22,6 +23,9 @@ public class MenuController {
             }
             else if (op == 2) {
                 listarProdutosController = new ListarProdutosController();
+            }
+            else if (op == 3) {
+                atualizarQtdEmEstoqueControler = new AtualizarQtdEmEstoqueController();
             }
             else if (op == 0) {
                 break;

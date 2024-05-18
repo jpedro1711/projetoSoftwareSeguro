@@ -10,14 +10,19 @@ create table produto (
     quantidadeEstoque int,
     quantidadeMinimaEstoque int
 );
+
+INSERT INTO produto (nomeProduto, valorVenda, custoUnitario, quantidadeEstoque, quantidadeMinimaEstoque)
+VALUES ('Produto Exemplo', 100.00, 50.00, 200, 50);
+
 select * from produto;
 # exemplo de date: '2024-05-07'
 create table venda (
 	id int primary key auto_increment,
-    dataVenda date 
+    dataVenda date ,
+    valorTotal decimal
 );
-
-create table venda_produto (
+select * from venda;
+create table items_venda (
     id int primary key auto_increment,
     venda_id int,
     produto_id int,
@@ -25,3 +30,4 @@ create table venda_produto (
     foreign key (venda_id) references venda(id),
     foreign key (produto_id) references produto(id)
 );
+select * from items_venda;

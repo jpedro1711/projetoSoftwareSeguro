@@ -11,7 +11,7 @@ public class ExceptionsLogger {
             bw.write(logMessage);
             bw.newLine();
         } catch (IOException ex) {
-            System.err.println("Erro ao escrever no arquivo de log: " + ex.getMessage());
+            System.out.println("Erro ao escrever no arquivo de log: " + ex.getMessage());
         }
     }
 

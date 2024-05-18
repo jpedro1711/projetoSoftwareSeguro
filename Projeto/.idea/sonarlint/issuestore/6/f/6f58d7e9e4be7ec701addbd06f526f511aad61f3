@@ -1,7 +1,10 @@
 
 
-java:S1068">Remove this unused "cadastrarProdutoController" private field.(ŒÊ¬8ñ¾Å¾ö1J$098fd32b-2212-4d8b-ad0a-6f752ee0c501
+java:S1068">Remove this unused "cadastrarProdutoController" private field.(ŒÊ¬8æ½ºÉø1J$bef6bae9-3117-43f1-a078-73c494c99cf1
 „
-java:S1068"<Remove this unused "listarProdutosController" private field.(µ“¾Éøÿÿÿÿ8×ÊºÅö1J$e6293c45-a281-4701-8f5f-2a762a4e4b21
+java:S1068"<Remove this unused "listarProdutosController" private field.(µ“¾Éøÿÿÿÿ8õ½ºÉø1J$beb1e442-73c4-43de-9653-65b8604a2328
 …
-java:S1068	"BRemove this unused "atualizarQtdEmEstoqueControler" private field.(¾Ğ€î8ÿÜŒŸ÷1J$f71e2571-6941-40bd-b31d-9fabe1f17977
+java:S1068	"BRemove this unused "atualizarQtdEmEstoqueControler" private field.(¾Ğ€î8õ½ºÉø1J$b5118a1d-cac3-4b02-99d4-8e9d404e4682
+„
+java:S1068
+"<Remove this unused "cadastrarVendaController" private field.(–áªÓÿÿÿÿÿ8õ½ºÉø1J$b8e3ac48-b7da-4c75-9bc6-8612741a9d31

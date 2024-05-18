@@ -23,8 +23,7 @@ public class ProdutoDAO {
         Connection conn = conexao.getConexao();
 
         if (conn != null) {
-            try {
-                PreparedStatement ps = conn.prepareStatement(query);
+            try(PreparedStatement ps = conn.prepareStatement(query)) {
 
                 ps.setString(1, produto.getNomeProduto());
                 ps.setDouble(2, produto.getValorVenda());
@@ -34,11 +33,7 @@ public class ProdutoDAO {
 
                 ps.executeUpdate();
 
-                ps.close();
             } catch (SQLException e) {
-                ExceptionsLogger.log(e);
-            }
-            catch (Exception e) {
                 ExceptionsLogger.log(e);
             }
             finally {
@@ -56,8 +51,8 @@ public class ProdutoDAO {
         Connection conn = conexao.getConexao();
         List<Produto> produtos = new ArrayList<>();
 
-        try {
-            PreparedStatement ps = conn.prepareStatement(query);
+        try(PreparedStatement ps = conn.prepareStatement(query)) {
+
 
             ResultSet rs = ps.executeQuery();
 
@@ -74,19 +69,14 @@ public class ProdutoDAO {
         } catch (SQLException e) {
             ExceptionsLogger.log(e);
         }
-        catch (Exception e) {
-            ExceptionsLogger.log(e);
-        }
         finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {
-                    ExceptionsLogger.log(e);
-                }
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                ExceptionsLogger.log(e);
             }
-            return produtos;
         }
+        return produtos;
     }
 
     public Produto buscarProdutoPorId(int id) {
@@ -94,8 +84,8 @@ public class ProdutoDAO {
         Connection conn = conexao.getConexao();
         Produto produto = null;
 
-        try {
-            PreparedStatement ps = conn.prepareStatement(query);
+        try (PreparedStatement ps = conn.prepareStatement(query)) {
+
             ps.setInt(1, id);
 
             ResultSet rs = ps.executeQuery();
@@ -112,13 +102,12 @@ public class ProdutoDAO {
         } catch (SQLException e) {
             ExceptionsLogger.log(e);
         } finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {
-                    ExceptionsLogger.log(e);
-                }
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                ExceptionsLogger.log(e);
             }
+
         }
 
         return produto;
@@ -133,8 +122,7 @@ public class ProdutoDAO {
         String query = "UPDATE produto SET quantidadeEstoque = ? WHERE id = ?";
         Connection conn = conexao.getConexao();
 
-        try {
-            PreparedStatement ps = conn.prepareStatement(query);
+        try(PreparedStatement ps = conn.prepareStatement(query)) {
             ps.setInt(1, novaQuantidade);
             ps.setInt(2, id);
 
@@ -143,12 +131,10 @@ public class ProdutoDAO {
             ExceptionsLogger.log(e);
         }
         finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {
-                    ExceptionsLogger.log(e);
-                }
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                ExceptionsLogger.log(e);
             }
         }
     }

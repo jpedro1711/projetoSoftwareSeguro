@@ -1,5 +1,7 @@
 package controllers;
 
+import com.amazonaws.services.cognitoidp.model.NotAuthorizedException;
+import com.amazonaws.services.cognitoidp.model.UnauthorizedException;
 import views.MenuView;
 
 public class MenuController {
@@ -8,12 +10,23 @@ public class MenuController {
     private ListarProdutosController listarProdutosController;
     private AtualizarQtdEmEstoqueController atualizarQtdEmEstoqueControler;
     private CadastrarVendaController cadastrarVendaController;
+    private CadastrarUsuarioController cadastrarUsuarioController;
+    private LoginController loginController;
 
     public MenuController() {
         menuView = new MenuView();
 
-
         int op = -1;
+
+        try {
+            loginController = new LoginController();
+        } catch (NotAuthorizedException e) {
+            System.out.println("Credenciais inválidas");
+            op = 0;
+        } catch (Exception e) {
+            System.out.println("Erro de login");
+            op = 0;
+        }
 
         while (op != 0) {
             op = menuView.mostrarMenu();
@@ -29,6 +42,9 @@ public class MenuController {
             }
             else if (op == 4) {
                 cadastrarVendaController  = new CadastrarVendaController();
+            }
+            else if (op == 5) {
+                cadastrarUsuarioController = new CadastrarUsuarioController();
             }
             else if (op == 0) {
                 break;

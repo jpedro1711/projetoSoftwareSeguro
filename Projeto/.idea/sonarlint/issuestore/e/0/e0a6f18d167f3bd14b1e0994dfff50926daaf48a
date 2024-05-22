@@ -1,18 +1,0 @@
-
-L
-java:S37405"/Provide the parametrized type for this generic.(¼èÊ‚8áì“ú1
-x	java:S116"WRename this field "USER_POOL_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø™Şşÿÿÿÿ8²áì“ú1
-p	java:S116"TRename this field "CLIENT_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãØÒ—8³áì“ú1
-C
-java:S1170"!Make this final field static too.(ø™Şşÿÿÿÿ8³áì“ú1
->
-java:S1170"!Make this final field static too.(ãØÒ—8´áì“ú1
-¶
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(õ´İ8¶áì“ú1
-G	java:S106""+Replace this use of System.out by a logger.(ĞœŸó8¾áì“ú1
-G	java:S106&"+Replace this use of System.out by a logger.(†Ÿª8¿áì“ú1
-G	java:S106("+Replace this use of System.out by a logger.(İ´8Àáì“ú1
-G	java:S106*"+Replace this use of System.out by a logger.(’ÒÏŠ8Àáì“ú1
-G	java:S106,"+Replace this use of System.out by a logger.(ÿï—´8Ááì“ú1
-R
-java:S1068"0Remove this unused "USER_POOL_ID" private field.(ø™Şşÿÿÿÿ8Òáì“ú1

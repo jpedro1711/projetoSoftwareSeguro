@@ -1,9 +1,0 @@
-
-^
-java:S1700"Rename field "conexao"(–±µ·ÿÿÿÿÿ8ò¬Œ¿ö1J$1309a3f3-cb43-4291-bd4f-c100a7ce9c11
-Ü
-java:S6548	"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.( ªƒ®8’­Œ¿ö1J$6440f7a7-aaa8-418b-98b2-00d54b6ac749
-a
-java:S2147"DCombine this catch with the one at line 25, which has the same body.(”ı¾8´ÊèÆö1
-s
-java:S1068"+Remove this unused "conexao" private field.(–±µ·ÿÿÿÿÿ8œ­Œ¿ö1J$6d32a4a8-a692-44b4-805f-f77386b6e380

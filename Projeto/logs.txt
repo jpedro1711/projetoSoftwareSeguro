@@ -7,3 +7,6 @@
 2024-05-17T22:00:29.520893600 - Parameter index out of range (3 > number of parameters, which is 2).
 2024-05-24T12:44:18.765124500 - com.mysql.cj.jdbc.Driver
 2024-05-24T12:44:18.765124500 - No suitable driver found for jdbc:mysql://127.0.0.1:3306/projeto_softwareseguro?useSSL=false
+2024-05-26T10:46:38.130878900 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by produto_idorder by contagem DESC limit 3' at line 1
+2024-05-26T10:49:47.947347400 - Unknown column 'produto.qtdEstoque' in 'field list'
+2024-05-26T10:50:55.438195500 - Unknown column 'produto.qtdEstoque' in 'group statement'

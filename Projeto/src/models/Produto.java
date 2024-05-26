@@ -25,6 +25,9 @@ public class Produto {
         this.quantidadeMinimaEstoque = quantidadeMinimaEstoque;
     }
 
+    public Produto() {
+    }
+
     public String getNomeProduto() {
         return nomeProduto;
     }

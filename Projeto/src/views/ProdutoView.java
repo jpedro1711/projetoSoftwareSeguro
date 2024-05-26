@@ -1,6 +1,7 @@
 package views;
 
 import models.Produto;
+import models.viewModels.AtualizarProdutoViewModel;
 import models.viewModels.AtualizarQtdViewModel;
 import utils.TextEntryValidator;
 
@@ -37,6 +38,39 @@ public class ProdutoView {
             System.out.println("Entrada inválida!");
             return null;
         }
+    }
+
+    public AtualizarProdutoViewModel atualizarProduto(List<Produto> produtos) {
+        listar(produtos);
+
+        try {
+            System.out.print("Digite o id do produto: ");
+            int produtoId = sc.nextInt();
+
+            sc.nextLine();
+
+            System.out.print("Novo Nome do produto: ");
+            String nome = validator.validate(sc.nextLine());
+
+            System.out.print("Novo Valor de venda do produto: ");
+            double valorVenda = sc.nextDouble();
+
+            System.out.print("Novo Custo unitário do produto: ");
+            double custoUnitario = sc.nextDouble();
+
+            System.out.print("Nova Quantidade em estoque do produto: ");
+            int qtdEstoque = sc.nextInt();
+
+            System.out.print("Nova Quantidade mínima em estoque do produto: ");
+            int qtdMinimaEstoque = sc.nextInt();
+            Produto novoProduto = new Produto(nome, valorVenda, custoUnitario, qtdEstoque, qtdMinimaEstoque);
+
+            return new AtualizarProdutoViewModel(produtoId, novoProduto);
+        } catch (InputMismatchException e) {
+            System.out.println("Entrada inválida!");
+            return null;
+        }
+
     }
 
     public void listar(List<Produto> produtos) {

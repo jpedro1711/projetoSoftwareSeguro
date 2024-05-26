@@ -1,0 +1,13 @@
+
+^
+java:S6909*"<Move this loop-invariant setter invocation out of this loop.(ïõæ‹ûÿÿÿÿ8¦èğ¨û1
+M
+java:S1128"+Remove this unused import 'models.Produto'.(õÑÈËüÿÿÿÿ8¿èğ¨û1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Àèğ¨û1
+M
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Áèğ¨û1
+s
+java:S69120"VUse "addBatch" and "executeBatch" to execute multiple SQL statements in a single call.(èØÁ8Ãèğ¨û1
+r
+java:S69121"VUse "addBatch" and "executeBatch" to execute multiple SQL statements in a single call.(Æ–ıx8Ãèğ¨û1

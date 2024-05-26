@@ -1,5 +1,11 @@
 
-`
-java:S69052"Don't use the query "SELECT *".(Ù·¹ŞøÿÿÿÿJ$8b8bd942-41d4-4582-956c-d4c9c448c83e
-`
-java:S6905S"Don't use the query "SELECT *".(·Öî”şÿÿÿÿJ$8963e87c-760f-4563-94bf-5dc78cc54a08
+¡
+java:S1192¿"XDefine a constant instead of duplicating this literal "Produto nÃ£o encontrado" 3 times.(û†ˆúÿÿÿÿ8“ÿ©û1J$c01105bb-a077-4208-85fc-875f0f1cbe7d
+~
+java:S1143‹"5Remove this return statement from this finally block.(ÜÅô—øÿÿÿÿ8‡ªû1J$333ee1e8-2b94-4fb1-8b8d-4dc21849576b
+g
+java:S69052"Don't use the query "SELECT *".(Ù·¹Şøÿÿÿÿ8Ÿ“ÿ©û1J$39c22a7e-9df1-4ea8-b845-cbbdc2f953b6
+g
+java:S6905S"Don't use the query "SELECT *".(òÛİúÿÿÿÿ8 “ÿ©û1J$307408d4-2677-4984-93e3-878a4179f855
+h
+java:S6905›"Don't use the query "SELECT *".(·Öî”şÿÿÿÿ8¢“ÿ©û1J$61c00afe-1bcc-4dea-8295-4ab2ce8bddea

@@ -1,0 +1,17 @@
+
+z
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ÁÃóçJ$9d9139a7-54ab-43ed-aaa1-f03db30a766a
+f	java:S106"+Replace this use of System.out by a logger.(€°„¹J$8fce8031-0c2c-49ec-979f-d956664c85d0
+f	java:S106 "+Replace this use of System.out by a logger.(ÆÀûıJ$c74d54c0-2d5d-41f3-ab47-51672d835607
+k	java:S106."+Replace this use of System.out by a logger.(®×øäùÿÿÿÿJ$af8fd530-42ec-4b95-bfff-9b1adead1b88
+f	java:S1062"+Replace this use of System.out by a logger.(Æ÷ìJ$32ebc156-d50e-46ab-8609-01a1578282bb
+f	java:S1066"+Replace this use of System.out by a logger.(ÚÂøJ$9cdf47f7-b23f-4afe-99b6-c4c480fc0eaf
+L	java:S106B"+Replace this use of System.out by a logger.(Óé°Çıÿÿÿÿ8ßéğ¨û1
+}
+java:S1128"ARemove this unused import 'controllers.CadastrarVendaController'.(ËÅJ$4ea1da0e-9e4b-4a7c-86d9-0d6b378e82c1
+}
+java:S1128"ARemove this unused import 'controllers.ListarProdutosController'.(ä¥ñªJ$9b9d4994-fd86-45a6-ae7c-89a2a55c62c9
+i
+java:S1128"-Remove this unused import 'models.ItemVenda'.(´¨ÃJ$38109ee5-d691-4ead-9652-0b41008a4f13
+i
+java:S1068"-Remove this unused "validator" private field.(÷’  J$7f32f63b-f0fc-418b-a01e-35c1815338d4

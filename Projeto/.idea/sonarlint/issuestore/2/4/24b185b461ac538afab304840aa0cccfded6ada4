@@ -1,16 +1,25 @@
 
-k	java:S106"+Replace this use of System.out by a logger.(ÕÓå§ÿÿÿÿÿJ$33897d9b-b754-40a7-9897-d0f40246434a
-k	java:S106"+Replace this use of System.out by a logger.(Ä¨ˆŠÿÿÿÿÿJ$1ec5012d-4da4-4561-a265-6ec0ea9d9a3c
-f	java:S106"+Replace this use of System.out by a logger.(Ÿ‡Æ®J$49e763d3-a49a-4ba3-906c-7aeaefb71d53
-f	java:S106"+Replace this use of System.out by a logger.(‰ÜÊ„J$9d0bc1dd-a7d4-4402-a957-7910f9546b7b
-e	java:S106!"+Replace this use of System.out by a logger.(éÈJ$44eb5332-f6b1-4ba8-ae45-a26d1f1822d4
-f	java:S106%"+Replace this use of System.out by a logger.(™ùÄâJ$b4b3c2b7-d248-4a9b-a630-c2f752a179c0
-z
-java:S1155+">Use isEmpty() to check whether the collection is empty or not.(ÁÃóçJ$5798f2f8-c79d-43c1-9473-af8d8d7ca4d3
-f	java:S106,"+Replace this use of System.out by a logger.(€°„¹J$849d3ee7-12b1-4683-b84b-58594bbeefb1
-f	java:S1061"+Replace this use of System.out by a logger.(ÆÀûýJ$bbd1cdef-b8b9-4d7c-a2d2-b944910ea1ef
-f	java:S106?"+Replace this use of System.out by a logger.(Ø‹³½J$2ddffee5-1487-4e2a-a873-5df05890e893
-k	java:S106B"+Replace this use of System.out by a logger.(­·°ôûÿÿÿÿJ$259b4770-1dcb-4bb0-a132-d5f51d863eb0
-f	java:S106J"+Replace this use of System.out by a logger.(Ø‹³½J$cca713f8-c97c-4c7a-963e-93902ffd9cb9
-r	java:S106M"+Replace this use of System.out by a logger.(îþÔ—øÿÿÿÿ8”£é§û1J$3b62dbea-e5c6-4bc2-aaed-69c13ca73ac2
-m	java:S106T"+Replace this use of System.out by a logger.(Ô£À€8˜£é§û1J$cc0937db-37b1-4539-b4c6-8e2f6af1f7bb
+œ
+java:S1192/"YDefine a constant instead of duplicating this literal "Digite o id do produto: " 3 times.(Ø‹³½8¿§Ë©û1J$3b8587da-54d7-46ea-ac4d-b06fe30112ca
+r	java:S106"+Replace this use of System.out by a logger.(ÕÓå§ÿÿÿÿÿ8É§Ë©û1J$ba7be447-40aa-46fd-a92d-01fa5a678b81
+r	java:S106"+Replace this use of System.out by a logger.(Ä¨ˆŠÿÿÿÿÿ8É§Ë©û1J$8b631679-8be0-43b6-a99c-7c686ebeec1c
+m	java:S106"+Replace this use of System.out by a logger.(Ÿ‡Æ®8Ê§Ë©û1J$bd6ac3a3-5fdf-481e-aa13-a24e74c4dc0b
+m	java:S106"+Replace this use of System.out by a logger.(‰ÜÊ„8Ê§Ë©û1J$995d0ea1-d982-41f4-9126-af23567555a7
+l	java:S106""+Replace this use of System.out by a logger.(éÈ8Ê§Ë©û1J$59723452-1ed0-4cf7-abce-f516f86a4091
+m	java:S106&"+Replace this use of System.out by a logger.(™ùÄâ8Ê§Ë©û1J$cee204b1-400a-46eb-9677-9d3d9c05e307
+m	java:S106/"+Replace this use of System.out by a logger.(Ø‹³½8Ë§Ë©û1J$fb21a854-294a-473e-b6a6-bea7edc8698e
+m	java:S1064"+Replace this use of System.out by a logger.(½ÛÒˆ8Ë§Ë©û1J$5964efe1-f43f-4358-9b49-6922eb501a76
+r	java:S1067"+Replace this use of System.out by a logger.(ð‹ñøÿÿÿÿ8Ë§Ë©û1J$b154ded9-6aa3-44b5-b730-b083c778725b
+r	java:S106:"+Replace this use of System.out by a logger.(ØÑÉíüÿÿÿÿ8Ë§Ë©û1J$7db2efde-fae2-4367-9cc8-154768494fe2
+m	java:S106="+Replace this use of System.out by a logger.(¨ã§‡8Ë§Ë©û1J$fc0afb8b-9e45-4224-9589-fb18cb92db91
+r	java:S106@"+Replace this use of System.out by a logger.(Ë•÷“øÿÿÿÿ8Ì§Ë©û1J$46648c22-eb11-407f-9dc3-e1d2a1b975fc
+m	java:S106F"+Replace this use of System.out by a logger.(™ùÄâ8Ì§Ë©û1J$d1f56565-cd1e-40ce-90d7-eaa9d32bbef2
+
+java:S1155M">Use isEmpty() to check whether the collection is empty or not.(ÁÃóç8×§Ë©û1J$73a44b21-6fd4-42c3-ace1-7e2b5987c6e9
+m	java:S106N"+Replace this use of System.out by a logger.(€°„¹8×§Ë©û1J$af4e40fc-88ae-4e3e-9625-3be23b46a1c3
+m	java:S106S"+Replace this use of System.out by a logger.(ÆÀûý8×§Ë©û1J$c12b3c0d-e69d-4f10-96ca-fff2ccec26b8
+m	java:S106a"+Replace this use of System.out by a logger.(Ø‹³½8Ø§Ë©û1J$3bd540b4-8d23-40ba-b174-7d513468901e
+r	java:S106d"+Replace this use of System.out by a logger.(­·°ôûÿÿÿÿ8Ù§Ë©û1J$ee4ff678-1bf2-4725-94c5-172b2b19942c
+m	java:S106l"+Replace this use of System.out by a logger.(Ø‹³½8Ù§Ë©û1J$aac93164-bab3-4d36-a1c1-64bdcf479766
+r	java:S106o"+Replace this use of System.out by a logger.(îþÔ—øÿÿÿÿ8Ù§Ë©û1J$daf2fff3-8fb4-47be-81e4-74d018d306b4
+m	java:S106v"+Replace this use of System.out by a logger.(Ô£À€8Ú§Ë©û1J$21cba540-e302-480d-9644-9266cd246a1b

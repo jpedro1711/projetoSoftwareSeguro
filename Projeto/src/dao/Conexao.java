@@ -1,6 +1,7 @@
 package dao;
 
 import utils.ExceptionsLogger;
+import io.github.cdimascio.dotenv.Dotenv;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,9 +16,10 @@ public class Conexao {
 
     private Conexao(){
         try {
-            dbHost = "jdbc:mysql://127.0.0.1:3306/projeto_softwareseguro?useSSL=false";
-            dbUser = "root";
-            dbPassword = "mysqlRoot2023";
+            Dotenv dotenv = Dotenv.load();
+            dbHost = dotenv.get("DB_HOST");
+            dbUser = dotenv.get("DB_USER");
+            dbPassword = dotenv.get("DB_PASSWORD");
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
@@ -31,14 +33,17 @@ public class Conexao {
 
     public static Conexao getInstance() {
         if (instance == null) {
-            return new Conexao();
+            instance = new Conexao();
         }
         return instance;
     }
 
     public Connection getConexao() {
         try {
-            return DriverManager.getConnection(dbHost, dbUser, dbPassword);
+            if (conexao == null || conexao.isClosed()) {
+                conexao = DriverManager.getConnection(dbHost, dbUser, dbPassword);
+            }
+            return conexao;
         } catch (SQLException e) {
             ExceptionsLogger.log(e);
         }

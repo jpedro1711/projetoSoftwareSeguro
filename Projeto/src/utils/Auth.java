@@ -4,25 +4,29 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.cognitoidp.AWSCognitoIdentityProvider;
 import com.amazonaws.services.cognitoidp.AWSCognitoIdentityProviderClientBuilder;
 import com.amazonaws.services.cognitoidp.model.*;
+import io.github.cdimascio.dotenv.Dotenv;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Auth {
-    private final String USER_POOL_ID = "us-east-2_iQXkdWdWe";
-    private final String CLIENT_ID = "46a4vckr35ejmle97d800ibqro";
+    private final String USER_POOL_ID;
+    private final String CLIENT_ID;
     private final AWSCognitoIdentityProvider cognitoClient;
     private static Auth instance = null;
-    private Auth()
-    {
+
+    private Auth() {
+        Dotenv dotenv = Dotenv.load();
+        USER_POOL_ID = dotenv.get("AWS_USER_POOL_ID");
+        CLIENT_ID = dotenv.get("AWS_CLIENT_ID");
+
         cognitoClient = AWSCognitoIdentityProviderClientBuilder.standard()
                 .withRegion(Regions.US_EAST_2)
                 .build();
     }
 
-    public boolean register(String email, String password)
-    {
-        boolean sucess = false;
+    public boolean register(String email, String password) {
+        boolean success = false;
         try {
             SignUpRequest signUpRequest = new SignUpRequest()
                     .withClientId(CLIENT_ID)
@@ -31,9 +35,9 @@ public class Auth {
 
             SignUpResult result = cognitoClient.signUp(signUpRequest);
 
-            System.out.println("User registration sucessfull. Status: " + result.getUserConfirmed());
+            System.out.println("User registration successful. Status: " + result.getUserConfirmed());
 
-            sucess = true;
+            success = true;
         } catch (InvalidParameterException e) {
             System.out.println("E-mail inválido");
         } catch (InvalidPasswordException e) {
@@ -44,13 +48,11 @@ public class Auth {
             System.out.println("Erro de cadastro");
         }
 
-
-        return sucess;
+        return success;
     }
 
-    public boolean login(String username, String password)
-    {
-        Map<String, String> authParams = new HashMap();
+    public boolean login(String username, String password) {
+        Map<String, String> authParams = new HashMap<>();
         authParams.put("USERNAME", username);
         authParams.put("PASSWORD", password);
 
@@ -63,8 +65,7 @@ public class Auth {
 
         AuthenticationResultType authResult = authResponse.getAuthenticationResult();
 
-        if (authResult == null)
-        {
+        if (authResult == null) {
             throw new UnauthorizedException("Login Error");
         }
 
@@ -72,8 +73,9 @@ public class Auth {
     }
 
     public static Auth getInstance() {
-        if (instance == null) return new Auth();
-
+        if (instance == null) {
+            instance = new Auth();
+        }
         return instance;
     }
 }

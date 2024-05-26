@@ -61,3 +61,9 @@ G.idea/sonarlint/issuestore/3/2/32bb29edc5fde86194fa0f8c7c12e474f228a553,f\8\f8
 Q.idea/sonarlint/securityhotspotstore/3/2/32bb29edc5fde86194fa0f8c7c12e474f228a553,e\5\e5a272765842a74911a77dd04330cec2f5d62540
 Å
 Q.idea/sonarlint/securityhotspotstore/c/0/c0b8a241aab9505abd8ed35c7335ff3c74354fe4,e\4\e4500e12d098dee3bc559c7acb4a851049a8cbbf
+E
+src/dao/VendaDAO.java,c\a\ca8a22e1ee24cbb31b45250e6a9a867874d512c7
+H
+src/views/VendaView.java,1\9\1991e5cff6d4d5c731c274d99aab97118fc71630
+f
+6src/controllers/BuscarValorTotalVendidoController.java,c\b\cb76eecbd41153ad05b34ec2906b6f0a30af7395

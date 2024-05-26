@@ -61,4 +61,8 @@ public class VendaView {
 
         return vendaViewModels;
     }
+
+    public void valorTotalVendido(double valor) {
+        System.out.println("Valor total vendido: " + valor);
+    }
 }

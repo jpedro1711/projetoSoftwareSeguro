@@ -139,5 +139,30 @@ public class ProdutoDAO {
         }
     }
 
+    public void atualizarQuantidadeMinimaEstoque(int id, int novaQuantidade) throws ProdutoException {
+        if (buscarProdutoPorId(id) == null) {
+            throw new ProdutoException("Produto não encontrado");
+        }
+
+        String query = "UPDATE produto SET quantidadeMinimaEstoque = ? WHERE id = ?";
+        Connection conn = conexao.getConexao();
+
+        try(PreparedStatement ps = conn.prepareStatement(query)) {
+            ps.setInt(1, novaQuantidade);
+            ps.setInt(2, id);
+
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            ExceptionsLogger.log(e);
+        }
+        finally {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                ExceptionsLogger.log(e);
+            }
+        }
+    }
+
 
 }

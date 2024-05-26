@@ -1,0 +1,20 @@
+
+f	java:S106"+Replace this use of System.out by a logger.(×øİñJ$d50c203f-148f-492b-8981-872a475b5483
+k	java:S106"+Replace this use of System.out by a logger.(°Œ¼¥şÿÿÿÿJ$83bc6e8a-2efd-4cc5-80ac-c1b9739f8170
+|
+java:S1128"ZRemove this unused import 'com.amazonaws.services.cognitoidp.model.UnauthorizedException'.(£æĞ‡øÿÿÿÿ8°Œ€¨û1
+z
+java:S1068	">Remove this unused "cadastrarProdutoController" private field.(ŒÊ¬J$67f7a5e8-eef6-4803-89b8-97528376db5c
+}
+java:S1068
+"<Remove this unused "listarProdutosController" private field.(µ“¾ÉøÿÿÿÿJ$73ba1407-3ec7-4d17-ba9d-ab7a33efc512
+~
+java:S1068"BRemove this unused "atualizarQtdEmEstoqueControler" private field.(¾Ğ€îJ$bdc7f9cd-61f5-455b-9432-3c6d67ba4913
+}
+java:S1068"<Remove this unused "cadastrarVendaController" private field.(–áªÓÿÿÿÿÿJ$4194406e-d893-493e-b8d1-b6fa29be669a
+
+java:S1068">Remove this unused "cadastrarUsuarioController" private field.(³àáßÿÿÿÿÿJ$e3769c2f-75ad-44b9-a226-928e0dc6252e
+t
+java:S1068"3Remove this unused "loginController" private field.(”¨ üÿÿÿÿJ$9e407325-2fb9-46f9-b68b-7dd1b23b2784
+Œ
+java:S1068"IRemove this unused "atualizarQtdMinimaEmEstoqueController" private field.(ã¯îı8ñúñ§û1J$2d3b6ec7-723a-48af-ad58-4f290bfa0e8f

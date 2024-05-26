@@ -12,6 +12,7 @@ public class MenuController {
     private CadastrarVendaController cadastrarVendaController;
     private CadastrarUsuarioController cadastrarUsuarioController;
     private LoginController loginController;
+    private AtualizarQtdMinimaEmEstoqueController atualizarQtdMinimaEmEstoqueController;
 
     public MenuController() {
         menuView = new MenuView();
@@ -45,6 +46,9 @@ public class MenuController {
             }
             else if (op == 5) {
                 cadastrarUsuarioController = new CadastrarUsuarioController();
+            }
+            else if (op ==6) {
+                atualizarQtdMinimaEmEstoqueController = new AtualizarQtdMinimaEmEstoqueController();
             }
             else if (op == 0) {
                 break;

@@ -1,9 +1,12 @@
 package dao;
 import models.ItemVenda;
+import models.Produto;
 import models.Venda;
 import utils.ExceptionsLogger;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class VendaDAO {
     private Conexao conexao;
@@ -54,5 +57,30 @@ public class VendaDAO {
         }
 
 
+    }
+
+    public double getValorTotalVendido() {
+        String query = "select sum(valorTotal) from venda";
+        Connection conn = conexao.getConexao();
+        double valor = 0;
+
+        try(PreparedStatement ps = conn.prepareStatement(query)) {
+            ResultSet rs = ps.executeQuery(query);
+
+            while (rs.next()) {
+                valor = rs.getDouble(1);
+            }
+        } catch (SQLException e) {
+            ExceptionsLogger.log(e);
+        }
+        finally {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                ExceptionsLogger.log(e);
+            }
+        }
+
+        return valor;
     }
 }

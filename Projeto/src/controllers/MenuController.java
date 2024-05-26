@@ -14,6 +14,7 @@ public class MenuController {
     private LoginController loginController;
     private AtualizarQtdMinimaEmEstoqueController atualizarQtdMinimaEmEstoqueController;
     private ListarProdutosAbaixoQtdMinimaEmEstoqueController listarProdutosAbaixoQtdMinimaEmEstoqueController;
+    private BuscarValorTotalVendidoController buscarValorTotalVendidoController;
 
     public MenuController() {
         menuView = new MenuView();
@@ -53,6 +54,9 @@ public class MenuController {
             }
             else if (op == 7) {
                 listarProdutosAbaixoQtdMinimaEmEstoqueController = new ListarProdutosAbaixoQtdMinimaEmEstoqueController();
+            }
+            else if (op == 8) {
+                buscarValorTotalVendidoController = new BuscarValorTotalVendidoController();
             }
             else if (op == 0) {
                 break;

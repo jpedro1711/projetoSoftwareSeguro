@@ -69,6 +69,17 @@ public class ProdutoView {
         return new AtualizarQtdViewModel(produtoId, novaQtd);
     }
 
+    public AtualizarQtdViewModel atualizarQtdMinimaEmEstoque(List<Produto> produtos) {
+        listar(produtos);
+        System.out.print("Digite o id do produto: ");
+        int produtoId = sc.nextInt();
+
+        System.out.print("\nDigite a nova quantidade mínima em estoque: ");
+        int novaQtd = sc.nextInt();
+
+        return new AtualizarQtdViewModel(produtoId, novaQtd);
+    }
+
     public void showError(String msg) {
         System.out.println("Error: " + msg);
     }

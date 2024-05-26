@@ -79,6 +79,39 @@ public class ProdutoDAO {
         return produtos;
     }
 
+    public List<Produto> listarAbaixoEstoqueMinimo() {
+        String query = "SELECT * FROM produto where quantidadeEstoque < quantidadeMinimaEstoque";
+        Connection conn = conexao.getConexao();
+        List<Produto> produtos = new ArrayList<>();
+
+        try(PreparedStatement ps = conn.prepareStatement(query)) {
+
+
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt(1);
+                String nome = rs.getString(2);
+                double valorVenda = rs.getDouble(3);
+                double custoUnitario = rs.getDouble(4);
+                int qtdEstoque = rs.getInt(5);
+                int qtdMinEstoque = rs.getInt(6);
+
+                produtos.add(new Produto(id, nome, valorVenda, custoUnitario, qtdEstoque, qtdMinEstoque));
+            }
+        } catch (SQLException e) {
+            ExceptionsLogger.log(e);
+        }
+        finally {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                ExceptionsLogger.log(e);
+            }
+        }
+        return produtos;
+    }
+
     public Produto buscarProdutoPorId(int id) {
         String query = "SELECT * FROM produto WHERE id = ?";
         Connection conn = conexao.getConexao();

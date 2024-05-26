@@ -49,3 +49,15 @@ Q.idea/sonarlint/securityhotspotstore/f/e/fe03b4fd3afe162c6e01309b98a22588e093d2
 Q.idea/sonarlint/securityhotspotstore/2/4/24b185b461ac538afab304840aa0cccfded6ada4,1\f\1f4f49b097ec069ad23abfa3a72211f2aed1756a
 Å
 Q.idea/sonarlint/securityhotspotstore/c/9/c91366e20415bdd24c6220ae13bf3aa2f12cea41,7\7\776cbe051efd57bbcb4ef89da9ade0d4464e3796
+u
+Esrc/controllers/ListarProdutosAbaixoQtdMinimaEmEstoqueController.java,3\2\32bb29edc5fde86194fa0f8c7c12e474f228a553
+]
+-src/controllers/ListarProdutosController.java,c\0\c0b8a241aab9505abd8ed35c7335ff3c74354fe4
+w
+G.idea/sonarlint/issuestore/c/0/c0b8a241aab9505abd8ed35c7335ff3c74354fe4,4\2\42b2158a5ced64cd2df9fbb8e9b72b827382b97c
+w
+G.idea/sonarlint/issuestore/3/2/32bb29edc5fde86194fa0f8c7c12e474f228a553,f\8\f82ca7f1db8995b6151b92e07db38fd64e15a312
+Å
+Q.idea/sonarlint/securityhotspotstore/3/2/32bb29edc5fde86194fa0f8c7c12e474f228a553,e\5\e5a272765842a74911a77dd04330cec2f5d62540
+Å
+Q.idea/sonarlint/securityhotspotstore/c/0/c0b8a241aab9505abd8ed35c7335ff3c74354fe4,e\4\e4500e12d098dee3bc559c7acb4a851049a8cbbf

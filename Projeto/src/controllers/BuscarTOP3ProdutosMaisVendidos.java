@@ -1,10 +1,8 @@
 package controllers;
 
 import dao.ProdutoDAO;
-import dao.VendaDAO;
 import models.Produto;
 import views.ProdutoView;
-import views.VendaView;
 
 import java.util.List;
 

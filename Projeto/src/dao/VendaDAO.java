@@ -1,12 +1,8 @@
 package dao;
 import models.ItemVenda;
-import models.Produto;
 import models.Venda;
-import utils.ExceptionsLogger;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class VendaDAO {
     private Conexao conexao;
@@ -21,18 +17,21 @@ public class VendaDAO {
         String insertItemVenda = "INSERT INTO items_venda (venda_id, produto_id, quantidade) VALUES (?, ?, ?)";
         String updateQtdEstoque = "UPDATE produto SET quantidadeEstoque = ? WHERE id = ?";
 
-        try (
-                PreparedStatement ps = connection.prepareStatement(insertVendaQuery, Statement.RETURN_GENERATED_KEYS);
-                PreparedStatement psItem = connection.prepareStatement(insertItemVenda);
-                PreparedStatement updateQtdEstoquePs = connection.prepareStatement(updateQtdEstoque)
-        ) {
+        PreparedStatement ps = null;
+        PreparedStatement psItem = null;
+        PreparedStatement updateQtdEstoquePs = null;
+        ResultSet rs = null;
 
+        try {
+            ps = connection.prepareStatement(insertVendaQuery, Statement.RETURN_GENERATED_KEYS);
+            psItem = connection.prepareStatement(insertItemVenda);
+            updateQtdEstoquePs = connection.prepareStatement(updateQtdEstoque);
 
             ps.setDate(1, new java.sql.Date(venda.getDataVenda().getTime()));
             ps.setDouble(2, venda.getTotalVenda());
             ps.executeUpdate();
 
-            ResultSet rs = ps.getGeneratedKeys();
+            rs = ps.getGeneratedKeys();
 
             if (rs.next()) {
                 int vendaId = rs.getInt(1);
@@ -53,7 +52,9 @@ public class VendaDAO {
 
             rs.close();
         } catch (SQLException e) {
-            ExceptionsLogger.log(e);
+            e.printStackTrace();
+        } finally {
+            fecharConexoes(connection, ps, rs);
         }
 
 
@@ -64,23 +65,46 @@ public class VendaDAO {
         Connection conn = conexao.getConexao();
         double valor = 0;
 
-        try(PreparedStatement ps = conn.prepareStatement(query)) {
-            ResultSet rs = ps.executeQuery(query);
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            ps = conn.prepareStatement(query);;
+            rs = ps.executeQuery(query);
 
             while (rs.next()) {
                 valor = rs.getDouble(1);
             }
         } catch (SQLException e) {
-            ExceptionsLogger.log(e);
+            e.printStackTrace();
         }
         finally {
-            try {
-                conn.close();
-            } catch (SQLException e) {
-                ExceptionsLogger.log(e);
-            }
+            fecharConexoes(conn, ps, rs);
         }
 
         return valor;
+    }
+
+    private void fecharConexoes(Connection conn, PreparedStatement ps, ResultSet rs) {
+        if (rs != null) {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        if (ps != null) {
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        if (conn != null) {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

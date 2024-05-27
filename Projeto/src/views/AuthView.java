@@ -1,24 +1,27 @@
 package views;
 
 import models.viewModels.AuthViewModel;
+import utils.TextEntryValidator;
 
 import java.util.Scanner;
 
 public class AuthView {
     private Scanner sc;
+    private TextEntryValidator validator;
 
     public AuthView() {
         sc = new Scanner(System.in);
+        validator = TextEntryValidator.getInstance();
     }
 
     public AuthViewModel getCredentials() {
         System.out.println("Insira seu e-mail e senha para se autenticar: ");
 
         System.out.println("Digite o e-mail: ");
-        String email = sc.nextLine();
+        String email = validator.validate(sc.nextLine());
 
         System.out.println("Digite a senha: ");
-        String senha = sc.nextLine();
+        String senha = validator.validate(sc.nextLine());
 
         return new AuthViewModel(email, senha);
     }

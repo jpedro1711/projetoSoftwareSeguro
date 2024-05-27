@@ -1,6 +1,5 @@
 package controllers;
 
-import com.amazonaws.services.cognitoidp.model.UnauthorizedException;
 import models.viewModels.AuthViewModel;
 import utils.Auth;
 import views.AuthView;

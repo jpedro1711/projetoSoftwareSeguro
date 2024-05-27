@@ -1,6 +1,5 @@
 package dao;
 
-import utils.ExceptionsLogger;
 import io.github.cdimascio.dotenv.Dotenv;
 
 import java.sql.Connection;
@@ -25,9 +24,9 @@ public class Conexao {
 
             conexao = DriverManager.getConnection(dbHost, dbUser, dbPassword);
         } catch (ClassNotFoundException e) {
-            ExceptionsLogger.log(e);
+            e.printStackTrace();
         } catch (Exception e) {
-            ExceptionsLogger.log(e);
+            e.printStackTrace();
         }
     }
 
@@ -45,7 +44,7 @@ public class Conexao {
             }
             return conexao;
         } catch (SQLException e) {
-            ExceptionsLogger.log(e);
+            e.printStackTrace();
         }
         return null;
     }

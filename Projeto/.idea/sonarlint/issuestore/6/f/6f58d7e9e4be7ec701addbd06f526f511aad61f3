@@ -1,30 +1,30 @@
 
 •
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‹Û°¡8ìÍè©û1J$4864f977-3141-445b-afa4-52b589d353ff
-m	java:S106"+Replace this use of System.out by a logger.(×øİñ8´è™©û1J$44de02c5-4761-4d42-8148-d3af7e8d17e4
-r	java:S106 "+Replace this use of System.out by a logger.(°Œ¼¥şÿÿÿÿ8´è™©û1J$25322c15-5699-46c6-97ca-eae797ebbd8f
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‹Û°¡8ò±‹«û1J$4a6d4f6b-7820-4f4d-be34-47d4f11fca42
+m	java:S106"+Replace this use of System.out by a logger.(×øİñ8²‹«û1J$5412cc1a-3660-4ab2-8a58-6141fe2606b7
+r	java:S106 "+Replace this use of System.out by a logger.(°Œ¼¥şÿÿÿÿ8²‹«û1J$04810d72-70ca-4426-bf66-30e76f4a74b2
 ¢
-java:S1128"ZRemove this unused import 'com.amazonaws.services.cognitoidp.model.UnauthorizedException'.(£æĞ‡øÿÿÿÿ8ƒçè©û1J$74f7f2af-4aa6-4d0f-86cb-b9052537ff04
+java:S1128"ZRemove this unused import 'com.amazonaws.services.cognitoidp.model.UnauthorizedException'.(£æĞ‡øÿÿÿÿ8†¶áÛû1J$ea436378-6d4d-42d9-b5e0-6244fbea1c24
 
-java:S1068	">Remove this unused "cadastrarProdutoController" private field.(ŒÊ¬8´è™©û1J$0f807261-ae2b-42df-a84c-a5704a28ac60
+java:S1068	">Remove this unused "cadastrarProdutoController" private field.(ŒÊ¬8´è™©û1J$008b2b69-a052-4c83-ab20-36d3bd3491f4
 „
 java:S1068
-"<Remove this unused "listarProdutosController" private field.(µ“¾Éøÿÿÿÿ8´è™©û1J$e02294dd-9c95-4aec-9ad1-0aaf6c04405a
+"<Remove this unused "listarProdutosController" private field.(µ“¾Éøÿÿÿÿ8´è™©û1J$fc2b1265-ddeb-4a0b-b01c-4549f40c2ebf
 …
-java:S1068"BRemove this unused "atualizarQtdEmEstoqueControler" private field.(¾Ğ€î8´è™©û1J$7eeba621-b954-423d-bb6a-9fe95a4fc45b
+java:S1068"BRemove this unused "atualizarQtdEmEstoqueControler" private field.(¾Ğ€î8´è™©û1J$a86f0026-c20e-4f37-9f42-01bd9f648294
 „
-java:S1068"<Remove this unused "cadastrarVendaController" private field.(–áªÓÿÿÿÿÿ8´è™©û1J$d58b7828-e2aa-4e68-9528-6c34586d3970
+java:S1068"<Remove this unused "cadastrarVendaController" private field.(–áªÓÿÿÿÿÿ8´è™©û1J$991b2a5d-4021-4192-93ac-87e9830fcd0e
 †
-java:S1068">Remove this unused "cadastrarUsuarioController" private field.(³àáßÿÿÿÿÿ8´è™©û1J$51910158-b8f6-4f79-914f-ce599c971409
+java:S1068">Remove this unused "cadastrarUsuarioController" private field.(³àáßÿÿÿÿÿ8´è™©û1J$98ed9aff-2a8b-4418-895a-b91157384e90
 {
-java:S1068"3Remove this unused "loginController" private field.(”¨ üÿÿÿÿ8´è™©û1J$eba7f597-4787-471d-8cf7-610e0e37b5c6
+java:S1068"3Remove this unused "loginController" private field.(”¨ üÿÿÿÿ8´è™©û1J$b0a834cf-784a-443b-ad4a-9a349db4e14e
 Œ
-java:S1068"IRemove this unused "atualizarQtdMinimaEmEstoqueController" private field.(ã¯îı8´è™©û1J$b108cb94-e738-43d8-8017-56ca93b86a9b
+java:S1068"IRemove this unused "atualizarQtdMinimaEmEstoqueController" private field.(ã¯îı8Ê²‹«û1J$4422ec7e-181f-4540-8bb0-7a64e68b2a82
 —
-java:S1068"TRemove this unused "listarProdutosAbaixoQtdMinimaEmEstoqueController" private field.(ŒäÖ8´è™©û1J$6b6f1955-4b91-4741-ac6d-df3320f86989
+java:S1068"TRemove this unused "listarProdutosAbaixoQtdMinimaEmEstoqueController" private field.(ŒäÖ8Ë²‹«û1J$b06d6169-ede0-4ada-8ee7-8f29dc86068d
 ‡
-java:S1068"ERemove this unused "buscarValorTotalVendidoController" private field.(àØ†d8´è™©û1J$66d79bc2-2008-46fc-8511-3777d313a770
+java:S1068"ERemove this unused "buscarValorTotalVendidoController" private field.(àØ†d8Ì²‹«û1J$904153bd-7477-4c90-aca7-0995c6691792
 …
-java:S1068"BRemove this unused "buscarTOP3ProdutosMaisVendidos" private field.(çÓ÷8äâš©û1J$165b8410-489f-480c-aaab-00d0802ab43e
+java:S1068"BRemove this unused "buscarTOP3ProdutosMaisVendidos" private field.(çÓ÷8Í²‹«û1J$bfd3117a-7401-4ef3-8790-c96a4aea7c84
 †
-java:S1068">Remove this unused "atualizarProdutoController" private field.(ë„×áüÿÿÿÿ8“Ğç©û1J$88fa0aed-22ac-4f77-9296-d3923a6fab2d
+java:S1068">Remove this unused "atualizarProdutoController" private field.(ë„×áüÿÿÿÿ8Î²‹«û1J$d8ecbd2e-9418-48c2-ab25-2452e65c5b76

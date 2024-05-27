@@ -1,10 +1,10 @@
 
-™	java:S116"WRename this field "USER_POOL_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë¹—¬8»ƒ´ªû1J$72d3cec8-ce3c-4d46-8b59-091610965fea
-›	java:S116"TRename this field "CLIENT_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äİĞüÿÿÿÿ8»ƒ´ªû1J$897a5f8c-b669-4577-af2f-b4da6fe7f78e
-m	java:S106&"+Replace this use of System.out by a logger.(¨»»ñ8Àƒ´ªû1J$50c93197-396f-4a79-824d-5d591f28b5b1
-m	java:S106*"+Replace this use of System.out by a logger.(†Ÿª8Àƒ´ªû1J$e30c3574-cbb5-41a2-866f-900e9da44708
-m	java:S106,"+Replace this use of System.out by a logger.(İ´8Àƒ´ªû1J$2a8ce6c9-fd6d-4b54-b1f8-0c922fab3c16
-m	java:S106."+Replace this use of System.out by a logger.(’ÒÏŠ8Àƒ´ªû1J$3381c05b-0f3d-4808-8313-b0cf9682692b
-m	java:S1060"+Replace this use of System.out by a logger.(ÿï—´8Àƒ´ªû1J$d75972cc-c861-40d8-aa8d-90c909d11c5a
+™	java:S116"WRename this field "USER_POOL_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë¹—¬8¬¶‹«û1J$2d333c42-6b3b-441b-a44f-f752f62d6bbf
+›	java:S116"TRename this field "CLIENT_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äİĞüÿÿÿÿ8­¶‹«û1J$bea297b9-2050-489b-b564-3da53c8fe6bb
+m	java:S106&"+Replace this use of System.out by a logger.(¨»»ñ8Û¶‹«û1J$8ed9fd4d-8c40-4bde-82e9-209969926d0e
+m	java:S106*"+Replace this use of System.out by a logger.(†Ÿª8ß¶‹«û1J$c0fb2c47-2c2b-432f-9a58-d9553d86f3d7
+m	java:S106,"+Replace this use of System.out by a logger.(İ´8á¶‹«û1J$c447a0ea-248a-49d2-84ef-b10f4d0c8041
+m	java:S106."+Replace this use of System.out by a logger.(’ÒÏŠ8ë¶‹«û1J$cf40c597-8ebc-4c82-9c55-1e1405aaf197
+m	java:S1060"+Replace this use of System.out by a logger.(ÿï—´8í¶‹«û1J$43917ef3-e52b-4e10-a456-414ef5b0a517
 s
-java:S1068"0Remove this unused "USER_POOL_ID" private field.(Ë¹—¬8Âƒ´ªû1J$7e27e917-3e36-437c-b20a-dd21c606f818
+java:S1068"0Remove this unused "USER_POOL_ID" private field.(Ë¹—¬8‹·‹«û1J$c4f4c1ec-6311-4677-974d-52b0763994d9

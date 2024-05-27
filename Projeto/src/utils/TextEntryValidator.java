@@ -12,7 +12,7 @@ public class TextEntryValidator {
     public String validate(String value)
     {
 
-        value = Normalizer.normalize(value, Normalizer.Form.NFKC); // normalizar string, removendo acentos por exemplo
+        value = Normalizer.normalize(value, Normalizer.Form.NFKC);
 
         Pattern pattern = Pattern.compile("[<>]");
         Matcher matcher = pattern.matcher(value);

@@ -56,18 +56,23 @@ public class Auth {
         authParams.put("USERNAME", username);
         authParams.put("PASSWORD", password);
 
-        InitiateAuthRequest authRequest = new InitiateAuthRequest()
-                .withAuthFlow(AuthFlowType.USER_PASSWORD_AUTH)
-                .withAuthParameters(authParams)
-                .withClientId(CLIENT_ID);
+        try {
+            InitiateAuthRequest authRequest = new InitiateAuthRequest()
+                    .withAuthFlow(AuthFlowType.USER_PASSWORD_AUTH)
+                    .withAuthParameters(authParams)
+                    .withClientId(CLIENT_ID);
 
-        InitiateAuthResult authResponse = cognitoClient.initiateAuth(authRequest);
+            InitiateAuthResult authResponse = cognitoClient.initiateAuth(authRequest);
 
-        AuthenticationResultType authResult = authResponse.getAuthenticationResult();
+            AuthenticationResultType authResult = authResponse.getAuthenticationResult();
 
-        if (authResult == null) {
-            throw new UnauthorizedException("Login Error");
+            if (authResult == null) {
+                throw new UnauthorizedException("Login Error");
+            }
+        } catch (NotAuthorizedException ex) {
+            return false;
         }
+
 
         return true;
     }

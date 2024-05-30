@@ -1,6 +1,7 @@
 package controllers;
 
 import dao.VendaDAO;
+import exceptions.VendaException;
 import views.VendaView;
 
 public class BuscarValorTotalVendidoController {
@@ -10,8 +11,15 @@ public class BuscarValorTotalVendidoController {
         dao = new VendaDAO();
         view = new VendaView();
 
-        double valor = dao.getValorTotalVendido();
 
-        view.valorTotalVendido(valor);
+        try {
+            double valor = dao.getValorTotalVendido();
+
+            view.valorTotalVendido(valor);
+        } catch (VendaException ex) {
+            view.showError(ex.getMessage());
+        }
+
+
     }
 }

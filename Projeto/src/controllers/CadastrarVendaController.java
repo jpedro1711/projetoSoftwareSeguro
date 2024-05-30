@@ -3,6 +3,7 @@ package controllers;
 import dao.ProdutoDAO;
 import dao.VendaDAO;
 import exceptions.ProdutoException;
+import exceptions.VendaException;
 import models.ItemVenda;
 import models.Produto;
 import models.Venda;
@@ -31,19 +32,19 @@ public class CadastrarVendaController {
             Produto produto = produtoDAO.buscarProdutoPorId(viewModel.getProdutoId());
 
             if (produto == null) {
-                System.out.println("Falha ao adicionar produto com ID " + viewModel.getProdutoId() + " à venda");
+                vendaView.showError("Falha ao adicionar produto com ID " + viewModel.getProdutoId() + " à venda");
                 return;
             } else {
                 int quantidade = viewModel.getQtd();
                 ItemVenda itemVenda = new ItemVenda(venda, produto, quantidade);
                 if (produto.getQuantidadeEstoque() < quantidade) {
-                    System.out.println("Erro: quantidade em estoque insuficiente");
+                    vendaView.showError("Erro: quantidade em estoque insuficiente");
                     return;
                 }
                 try {
                     produtoDAO.atualizarQuantidadeEstoque(viewModel.getProdutoId(), produto.getQuantidadeEstoque() - itemVenda.getQuantidade());
                 } catch (ProdutoException e) {
-                    System.out.println("Erro ao atualizar QTD em estoque do produto");
+                    vendaView.showError("Erro ao atualizar QTD em estoque do produto");
                     return;
                 }
 
@@ -53,8 +54,12 @@ public class CadastrarVendaController {
         }
 
         venda.setProdutos(items);
-        dao.cadastrarVenda(venda);
+        try {
+            dao.cadastrarVenda(venda);
+        } catch (VendaException ex) {
+            vendaView.showError(ex.getMessage());
+        }
 
-        System.out.println("Venda cadastrada com sucesso!");
+        vendaView.showAlert("venda cadastrada com sucesso");
     }
 }

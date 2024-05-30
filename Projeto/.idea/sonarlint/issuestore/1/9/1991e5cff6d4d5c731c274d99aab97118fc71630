@@ -1,17 +1,19 @@
 
 z
-java:S1155">Use isEmpty() to check whether the collection is empty or not.(ÁÃóçJ$9d9139a7-54ab-43ed-aaa1-f03db30a766a
-f	java:S106"+Replace this use of System.out by a logger.(€°„¹J$8fce8031-0c2c-49ec-979f-d956664c85d0
-f	java:S106 "+Replace this use of System.out by a logger.(ÆÀûıJ$c74d54c0-2d5d-41f3-ab47-51672d835607
-k	java:S106."+Replace this use of System.out by a logger.(®×øäùÿÿÿÿJ$af8fd530-42ec-4b95-bfff-9b1adead1b88
-f	java:S1062"+Replace this use of System.out by a logger.(Æ÷ìJ$32ebc156-d50e-46ab-8609-01a1578282bb
-f	java:S1066"+Replace this use of System.out by a logger.(ÚÂøJ$9cdf47f7-b23f-4afe-99b6-c4c480fc0eaf
-L	java:S106B"+Replace this use of System.out by a logger.(Óé°Çıÿÿÿÿ8ßéğ¨û1
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ÁÃóçJ$631c5df4-ccdd-46bc-9822-e0f0a0b8bfa2
+f	java:S106"+Replace this use of System.out by a logger.(€°„¹J$36e98e42-0937-4ac2-b433-2b3211c15bff
+f	java:S106 "+Replace this use of System.out by a logger.(ÆÀûıJ$e053070a-c523-409d-8471-9a33aa03ba78
+k	java:S106."+Replace this use of System.out by a logger.(®×øäùÿÿÿÿJ$528d0126-63b3-4d0d-8e9e-9fc341d34759
+f	java:S1062"+Replace this use of System.out by a logger.(Æ÷ìJ$8f56a04c-99c1-4396-80a9-fddce2b904b0
+f	java:S1066"+Replace this use of System.out by a logger.(ÚÂøJ$2a1ab306-7134-42c9-9333-7b7b8fa2ce2e
+m	java:S106B"+Replace this use of System.out by a logger.(Ô£À€8ßéğ¨û1J$a1e48606-a6db-4b0c-be12-810f8b66b820
+l	java:S106F"+Replace this use of System.out by a logger.(‚š‰18³áÂ‚ı1J$209c406a-3b17-4aa0-8c47-f513d476465c
+r	java:S106J"+Replace this use of System.out by a logger.(Óé°Çıÿÿÿÿ8´§Î‚ı1J$fa938769-6806-4bcd-b86f-bdb223d3a590
 }
-java:S1128"ARemove this unused import 'controllers.CadastrarVendaController'.(ËÅJ$4ea1da0e-9e4b-4a7c-86d9-0d6b378e82c1
+java:S1128"ARemove this unused import 'controllers.CadastrarVendaController'.(ËÅJ$ba18344f-050e-45e1-b66f-7ba7522ad50c
 }
-java:S1128"ARemove this unused import 'controllers.ListarProdutosController'.(ä¥ñªJ$9b9d4994-fd86-45a6-ae7c-89a2a55c62c9
+java:S1128"ARemove this unused import 'controllers.ListarProdutosController'.(ä¥ñªJ$72620cf7-0fff-4155-b84d-37f659ff7426
 i
-java:S1128"-Remove this unused import 'models.ItemVenda'.(´¨ÃJ$38109ee5-d691-4ead-9652-0b41008a4f13
+java:S1128"-Remove this unused import 'models.ItemVenda'.(´¨ÃJ$fa908ba5-7322-4b07-a262-39cf3325174d
 i
-java:S1068"-Remove this unused "validator" private field.(÷’  J$7f32f63b-f0fc-418b-a01e-35c1815338d4
+java:S1068"-Remove this unused "validator" private field.(÷’  J$9faab95a-9453-4d31-88d5-6225faf2667e

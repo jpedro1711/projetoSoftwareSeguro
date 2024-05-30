@@ -1,4 +1,5 @@
 package dao;
+import exceptions.VendaException;
 import models.ItemVenda;
 import models.Venda;
 
@@ -11,7 +12,7 @@ public class VendaDAO {
         conexao = Conexao.getInstance();
     }
 
-    public void cadastrarVenda(Venda venda) {
+    public void cadastrarVenda(Venda venda) throws VendaException {
         Connection connection = conexao.getConexao();
         String insertVendaQuery = "INSERT INTO venda (dataVenda, valorTotal) VALUES (?, ?)";
         String insertItemVenda = "INSERT INTO items_venda (venda_id, produto_id, quantidade) VALUES (?, ?, ?)";
@@ -52,7 +53,7 @@ public class VendaDAO {
 
             rs.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new VendaException("Erro ao cadastrar venda");
         } finally {
             fecharConexoes(connection, ps, rs);
         }
@@ -60,7 +61,7 @@ public class VendaDAO {
 
     }
 
-    public double getValorTotalVendido() {
+    public double getValorTotalVendido() throws VendaException {
         String query = "select sum(valorTotal) from venda";
         Connection conn = conexao.getConexao();
         double valor = 0;
@@ -75,7 +76,7 @@ public class VendaDAO {
                 valor = rs.getDouble(1);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new VendaException("Erro ao buscar valor vendido");
         }
         finally {
             fecharConexoes(conn, ps, rs);
@@ -84,26 +85,26 @@ public class VendaDAO {
         return valor;
     }
 
-    private void fecharConexoes(Connection conn, PreparedStatement ps, ResultSet rs) {
+    private void fecharConexoes(Connection conn, PreparedStatement ps, ResultSet rs) throws VendaException {
         if (rs != null) {
             try {
                 rs.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                throw new VendaException("Erro ao fechar conexão");
             }
         }
         if (ps != null) {
             try {
                 ps.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                throw new VendaException("Erro ao fechar conexão");
             }
         }
         if (conn != null) {
             try {
                 conn.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                throw new VendaException("Erro ao fechar conexão");
             }
         }
     }

@@ -1,7 +1,7 @@
 package controllers;
 
 import com.amazonaws.services.cognitoidp.model.NotAuthorizedException;
-import com.amazonaws.services.cognitoidp.model.UnauthorizedException;
+import exceptions.AuthException;
 import views.MenuView;
 
 public class MenuController {
@@ -25,7 +25,7 @@ public class MenuController {
 
         try {
             loginController = new LoginController();
-        } catch (NotAuthorizedException e) {
+        } catch (AuthException e) {
             System.out.println("Credenciais inválidas");
             op = 0;
         } catch (Exception e) {

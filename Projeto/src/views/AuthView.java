@@ -25,4 +25,12 @@ public class AuthView {
 
         return new AuthViewModel(email, senha);
     }
+
+    public void showError(String msg) {
+        System.out.println("Error: " + msg);
+    }
+
+    public void showAlert(String msg) {
+        System.out.println(msg);
+    }
 }

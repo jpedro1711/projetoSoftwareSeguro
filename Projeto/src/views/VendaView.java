@@ -62,6 +62,14 @@ public class VendaView {
         return vendaViewModels;
     }
 
+    public void showError(String msg) {
+        System.out.println("Error: " + msg);
+    }
+
+    public void showAlert(String msg) {
+        System.out.println(msg);
+    }
+
     public void valorTotalVendido(double valor) {
         System.out.println("Valor total vendido: " + valor);
     }

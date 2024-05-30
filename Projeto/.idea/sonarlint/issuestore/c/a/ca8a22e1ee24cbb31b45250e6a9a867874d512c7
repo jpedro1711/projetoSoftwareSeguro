@@ -1,7 +1,9 @@
 
-—
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ãý¶¢ùÿÿÿÿ8Ò‹¬Üû1J$97356648-c2cf-4e3d-9dbe-9cee8628719c
+›
+java:S1192]"XDefine a constant instead of duplicating this literal "Erro ao fechar conexÃ£o" 3 times.(ü«€Ÿ8€°¾‚ý1J$884cbbd4-ae0e-4a10-8072-a37d03723d96
 ’
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.( õ–ê8Ò‹¬Üû1J$7610040a-1671-4180-b9a2-ef7c78fa1f05
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.( õ–ê8îÀâ‚ý1J$8ab93091-1de9-4857-aaff-35606dc71dec
+—
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ãý¶¢ùÿÿÿÿ8îÀâ‚ý1J$b877385a-1360-466d-9216-0ec20b74af8a
 d
-java:S1116G"Remove this empty statement.(—Šúûþÿÿÿÿ8ÖÃ§Üû1J$1dac4799-fa98-42ab-a07b-30988ed78a24
+java:S1116H"Remove this empty statement.(—Šúûþÿÿÿÿ8ÿ€º‚ý1J$ea0c99af-887e-4a80-afe8-392ca5bc7f9b

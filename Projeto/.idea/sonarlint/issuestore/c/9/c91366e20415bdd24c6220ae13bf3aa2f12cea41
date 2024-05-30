@@ -1,5 +1,5 @@
 
-l	java:S106"+Replace this use of System.out by a logger.(яе■V8Оаяз√1J$cf5c7341-e563-4dc7-9aa6-de6d1f0a3424
+l	java:S106"+Replace this use of System.out by a logger.(яе■V8Оаяз√1J$b65e7752-3697-4fa9-ab3c-4f872ffbf583
 t
-java:S6126"2Replace this String concatenation with Text block.(яе■V8Цаяз√1J$26a547b6-c7a7-4d84-a4cb-3c339093d4ca
-m	java:S106"+Replace this use of System.out by a logger.(А■ЧЭ8Цаяз√1J$e7bdbfd4-c5a0-4b71-a02a-1c4578ad8d2f
+java:S6126"2Replace this String concatenation with Text block.(яе■V8Цаяз√1J$ab0af363-144b-4f76-bb2a-7391d1b372bd
+m	java:S106"+Replace this use of System.out by a logger.(А■ЧЭ8Цаяз√1J$10a5c6f1-d00c-444a-844e-fe1351f2dbbd

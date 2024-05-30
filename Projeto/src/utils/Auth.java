@@ -4,6 +4,7 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.cognitoidp.AWSCognitoIdentityProvider;
 import com.amazonaws.services.cognitoidp.AWSCognitoIdentityProviderClientBuilder;
 import com.amazonaws.services.cognitoidp.model.*;
+import exceptions.AuthException;
 import io.github.cdimascio.dotenv.Dotenv;
 
 import java.util.HashMap;
@@ -25,7 +26,7 @@ public class Auth {
                 .build();
     }
 
-    public boolean register(String email, String password) {
+    public boolean register(String email, String password) throws AuthException {
         boolean success = false;
         try {
             SignUpRequest signUpRequest = new SignUpRequest()
@@ -39,13 +40,13 @@ public class Auth {
 
             success = true;
         } catch (InvalidParameterException e) {
-            System.out.println("E-mail inválido");
+            throw new AuthException("E-mail inválido");
         } catch (InvalidPasswordException e) {
-            System.out.println("Senha inválida");
+            throw new AuthException("Senha inválida");
         } catch (UsernameExistsException e) {
-            System.out.println("Usuário já existe");
+            throw new AuthException("Usuário já existe");
         } catch (Exception e) {
-            System.out.println("Erro de cadastro");
+            throw new AuthException("Erro de cadastro");
         }
 
         return success;

@@ -1,5 +1,6 @@
 package controllers;
 
+import exceptions.AuthException;
 import models.viewModels.AuthViewModel;
 import utils.Auth;
 import views.AuthView;
@@ -14,13 +15,18 @@ public class CadastrarUsuarioController {
 
         AuthViewModel credentials = authView.getCredentials();
 
-        boolean isRegistered = authHandler.register(credentials.getUsername(), credentials.getPassword());
+        try {
+            boolean isRegistered = authHandler.register(credentials.getUsername(), credentials.getPassword());
 
-        if (!isRegistered) {
-            System.out.println("Erro ao cadastrar usuario");
-        } else {
-            System.out.println("Usuário cadastrado com sucesso");
+            if (!isRegistered) {
+                authView.showError("Erro ao cadastrar usuario");
+            } else {
+                authView.showAlert("Usuário cadastrado com sucesso");
+            }
+        } catch (AuthException ex) {
+            authView.showError(ex.getMessage());
         }
+
     }
 
 

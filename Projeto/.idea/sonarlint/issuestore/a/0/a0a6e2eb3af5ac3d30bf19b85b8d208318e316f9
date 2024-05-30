@@ -1,0 +1,12 @@
+
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ°ß³8ÕÎ²¶ü1J$92908231-42dd-41db-b41e-ac4288d00949
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Îøˆúÿÿÿÿ8ÙÎ²¶ü1J$257ec84f-974d-4228-b2d5-c7890f8acbea
+•	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôóäôÿÿÿÿÿ8ÚÎ²¶ü1J$ecb0c4b5-0664-48a4-986f-ee1fb82453da
+
+java:S1155*">Use isEmpty() to check whether the collection is empty or not.(ï‚ú8ÜÎ²¶ü1J$7215981c-7dab-4280-a0a5-eef367c12f35
+•	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±é¢Ìşÿÿÿÿ8İÎ²¶ü1J$01ab84f3-45e1-4b22-9f33-57deac5a5108
+•	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ†â»şÿÿÿÿ8ŞÎ²¶ü1J$f9e11477-b6dc-4f4b-8f78-f46595cefeba
+†
+java:S1854<"DRemove this useless assignment to local variable "quantidadeAntiga".(ƒ¡Š8ßÎ²¶ü1J$36e40897-57ad-4d9d-81b5-7a5697b82ede
+w
+java:S1481<"5Remove this unused "quantidadeAntiga" local variable.(ƒ¡Š8àÎ²¶ü1J$9b7f5ad9-1ee1-48b1-8e08-58b788fe0207
